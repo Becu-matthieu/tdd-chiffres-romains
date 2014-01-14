@@ -13,19 +13,14 @@ public class NombreDecimal {
     }
 
     public String en_romain() {
-	if(valeur==1)
-		return "I";
-	if (valeur==2)
-		return "II";
-	
-	if (valeur==3)
-		return "III";
-	
-	if (valeur==4)
-		return "IV";
-	
-	else
-		return "";
 		
+		String[] tab = new String[5];
+		tab[0] = "";
+		tab[1] = "I";
+		tab[2] = "II";
+		tab[3] = "III";
+		tab[4] = "IV";
+		
+		return tab[valeur];
     }
 }
